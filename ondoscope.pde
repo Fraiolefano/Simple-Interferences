@@ -6,8 +6,8 @@ float[] data1={(float)(2*Math.PI/2.0),(float)(2*Math.PI/100.0),50,50};
 
 Wave w1;
 Wave w2;
-int THICKNESS_RESOLUTION=5; //5 
-int ideal_resolution=500;  // Per migliorare le prestazioni su cellulare
+int THICKNESS_RESOLUTION=5;
+int ideal_resolution=500;
 float y=0;
 
 int nPoints;
@@ -40,7 +40,7 @@ void setup()
   nPoints=ceil(ideal_resolution*3);
 
   stroke(255);
-  strokeWeight(THICKNESS_RESOLUTION); //5
+  strokeWeight(THICKNESS_RESOLUTION);
   noFill();
 
   w1=new Wave(data0);
@@ -58,7 +58,7 @@ void draw()
   translate(0,0,1);
   menu.draw();
 
-  strokeWeight(THICKNESS_RESOLUTION); //5
+  strokeWeight(THICKNESS_RESOLUTION);
   noFill();
 }
 
@@ -163,13 +163,13 @@ class Wave
    }
 }
 
-void saveShot()
-{
-  // nowTime=year()+"_"+month()+"_"+day()+"-"+hour()+"-"+minute()+"-"+second();
-  // imageName="./imgs/SimpleInterference"+"_"+nowTime+".png";
-  // save(imageName);
-  // console.log("Saved : "+imageName);
-}
+//void saveShot()
+//{
+//  String nowTime=year()+"_"+month()+"_"+day()+"-"+hour()+"-"+minute()+"-"+second();
+//  String imageName="./imgs/DigitalOndoscope/"+"_"+nowTime+".png";
+//  save(imageName);
+//  println("Saved : "+imageName);
+//}
 
 void initWindows()
 {
